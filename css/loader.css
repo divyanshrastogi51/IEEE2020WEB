@@ -1,0 +1,46 @@
+.loader{
+	position: fixed;
+  width: 120px;
+  height:120px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+}
+.loader .box{
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	left: 5px;
+	top: 5px;	
+	animation: animate 1s linear infinite;
+
+}
+@keyframes animate{
+	from{
+			background:#0000ff;
+		}
+	
+}
+.box:nth-child(1)
+{
+	animation-delay: 0.1s;
+}
+.box:nth-child(2)
+{
+	left: 60px;
+	animation-delay: 0.3s;
+	top: 5px;
+}
+.box:nth-child(3)
+{
+	left: 50%;
+	top: 50%;
+	animation-delay: 0.5s;
+}
+.box:nth-child(4)
+{
+	left: 5px;
+	top: 50%;
+	animation-delay: 0.7s;
+}
